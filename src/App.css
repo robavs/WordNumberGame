@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101418;
+    color: whitesmoke
+}
+
+/* -----------------Longest word-----------------*/
+
+
+
+/*--------------------My Number Computer---------------------*/
+
+.my-number-computer-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

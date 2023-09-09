@@ -1,0 +1,123 @@
+/*----------------------- Longest word computer -----------------------*/
+.longest-word-training-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw
+}
+
+.instructions {
+    position: relative;
+    display: flex;
+    margin: 5px;
+    width: 100vw;
+    justify-content: center;
+}
+
+.instructions h2 {
+    font-size: 30px
+}
+
+.training-input {
+    width: 50vw;
+    text-transform: uppercase;
+    margin: 40px;
+}
+
+.find-words-btn {
+    margin-bottom: 40px
+}
+
+.computer-words {
+    width: auto;
+}
+
+/*----------------------- Longest word training -----------------------*/
+.longest-word-computer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px;
+    width: 500px;
+}
+
+.letter {
+    height: 40px;
+    width: 40px;
+    outline: 2px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background: rgb(30, 109, 173);
+    color: white;
+    font-size: 19px;
+}
+
+.used-letter {
+    pointer-events: none;
+    opacity: 0.2
+}
+
+.current-word-input {
+    width: 80vw;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 9fr 0.3fr;
+    grid-template-areas: "submit-btn check-btn your-word delete-btn";
+    align-content: center;
+    padding: 0 10px;
+    margin: 40px 10px;
+    font-size: 23px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.computer-word,
+.end-game-message {
+    font-size: 20px;
+    margin: 20px
+}
+
+.message {
+    grid-area: 12 / 2 / 13 / 5;
+    border: 2px solid black;
+}
+
+.submit-btn {
+    grid-area: submit-btn;
+    cursor: pointer;
+}
+
+.check-btn {
+    grid-area: check-btn;
+    cursor: pointer;
+}
+
+.delete-btn {
+    grid-area: delete-btn;
+    cursor: pointer;
+}
+
+.your-word {
+    grid-area: your-word;
+    border: 2px solid white;
+}
+
+.your-word p {
+    margin-left: 10px
+}
+
+.disabled {
+    pointer-events: none;
+}

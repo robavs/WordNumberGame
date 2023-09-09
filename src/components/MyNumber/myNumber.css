@@ -1,0 +1,46 @@
+.my-number-computer-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.result-input-box {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.number-inputs-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.number-inputs-box {
+    display: flex;
+    width: 25vw;
+}
+
+#result,
+.number-input-option {
+    width: 12.5vw;
+}
+
+.find-btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px
+}
+
+.combinations,
+.computer-combinations-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
