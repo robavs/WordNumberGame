@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Animation } from '../../enums'
+import { Animation } from '../../models/enums'
 import { Box } from '@mui/material'
 
 function Home() {

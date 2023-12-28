@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import BackArrow from '../Custom/BackArrow'
 import Loading from '../Custom/Loading';
 import { findCombinations } from './functions';
-import { Context } from '../../enums';
+import { Context } from '../../models/enums';
 import { Alert, AlertTitle, Box, Button, Grid, TextField } from '@mui/material';
-import { ICombinations } from '../../interfaces';
+import { ICombinations } from '../../models/interfaces';
 import FunctionsRoundedIcon from '@mui/icons-material/FunctionsRounded';
 import "./myNumber.css"
 

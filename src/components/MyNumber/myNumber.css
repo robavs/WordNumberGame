@@ -1,4 +1,5 @@
-.my-number-computer-container {
+.my-number-computer-container,
+.my-number-training-container {
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
@@ -18,8 +19,6 @@
     display: flex;
     justify-content: center;
 }
-
-
 
 .number-inputs-box {
     display: flex;
@@ -43,4 +42,60 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*Training */
+
+.expression-container,
+.result-number-container,
+.generated-numbers,
+.operations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px
+}
+
+
+.operations {
+    margin: 0
+}
+
+.result-number,
+.number {
+    height: 45px;
+    width: 45px;
+    outline: 2px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background: rgb(30, 109, 173);
+    color: white;
+    font-size: 19px;
+}
+
+.used-number {
+    pointer-events: none;
+    opacity: 0.2
+}
+
+.result-number {
+    width: 150px;
+    cursor: default;
+}
+
+.current-expression-input {
+    width: 80vw;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 9fr 0.3fr;
+    grid-template-areas: "submit-btn check-btn your-word delete-btn";
+    align-content: center;
+    padding: 0 10px;
+    margin: 40px 10px;
+    font-size: 23px;
+    line-height: 30px;
+    margin-left: 10px;
 }

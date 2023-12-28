@@ -1,5 +1,5 @@
-import { Context } from "../../enums"
-import { Dictionary } from "../../types"
+import { Context } from "../../models/enums"
+import { Dictionary } from "../../models/types"
 import { StartTemplate } from "../Custom/StartTemplate"
 import './longestWord.css'
 

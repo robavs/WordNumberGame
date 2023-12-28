@@ -1,9 +1,9 @@
 import { useContext } from "react"
 import { LongestWordContext } from "./StartTemplate"
 import { MyNumberContext } from "./StartTemplate"
-import { Context } from "../../enums";
+import { Context } from "../../models/enums";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { LongestWordContextType, MyNumberContextType } from "../../types";
+import { LongestWordContextType, MyNumberContextType } from "../../models/types";
 import './custom.css'
 
 const BackArrow = ({ context }: { context: Context }) => {

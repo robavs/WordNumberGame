@@ -2,7 +2,7 @@ import Navbar from "./components/Custom/Navbar"
 import './App.css'
 import { Route, Routes } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { Dictionary } from "./types"
+import { Dictionary } from "./models/types"
 import LongestWord from "./components/LongestWord/LongestWord"
 import MyNumber from "./components/MyNumber/MyNumber"
 import Error from "./components/Custom/Error"

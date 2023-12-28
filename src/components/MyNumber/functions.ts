@@ -1,4 +1,4 @@
-import { ICombinations } from "../../interfaces";
+import { ICombinations } from "../../models/interfaces";
 
 export const findCombinations = (numbers: Array<number>, target: number): ICombinations => {
     const usedNumbers: Array<number> = Array(6).fill(0)

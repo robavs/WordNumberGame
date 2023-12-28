@@ -4,6 +4,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 // ovi pathovi ce trebati da se stave u poseban enum
 interface navLink {
@@ -19,6 +20,11 @@ const navLinks: Array<navLink> = [
 
 const Navbar = () => {
     const navigate = useNavigate()
+    const [selectedLink, setSelectedLink] = useState("")
+
+    useEffect(() => {
+        setSelectedLink(window.location.pathname)
+    }, [])
 
     return (
         <>
@@ -31,7 +37,11 @@ const Navbar = () => {
                                     <Button
                                         color="inherit"
                                         key={index}
-                                        onClick={() => navigate(link)}
+                                        onClick={() => {
+                                            navigate(link)
+                                            setSelectedLink(link)
+                                        }}
+                                        className={`${selectedLink === link ? "is-active" : "is-inactive"}`}
                                     >
                                         {title}
                                     </Button>

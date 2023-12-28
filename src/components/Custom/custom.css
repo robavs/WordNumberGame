@@ -57,3 +57,11 @@
     color: #fff;
     font-size: 24px;
 }
+
+.is-active {
+    opacity: 1
+}
+
+.is-inactive {
+    opacity: 0.5
+}

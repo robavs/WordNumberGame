@@ -1,6 +1,6 @@
-import { Dictionary } from "../../types"
+import { Dictionary } from "../../models/types"
 
-const random = (min: number, max: number): number => ~~(Math.random() * (max - min)) + min
+export const random = (min: number, max: number): number => ~~(Math.random() * (max - min)) + min
 
 const letters: Array<string> = ["а", "б", "в", "г", "д", "ђ", "е", "ж", "з", "и", "ј", "к", "л", "љ", "м", "н", "њ", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ћ", "џ", "ш"]
 

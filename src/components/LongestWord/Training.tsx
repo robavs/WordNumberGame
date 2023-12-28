@@ -7,9 +7,9 @@ import { generateRandomLetters, isWordValid, findWords, cyrilicToLatin, latinToC
 import BackArrow from "../Custom/BackArrow";
 import Loading from "../Custom/Loading";
 import LinearProgress from '@mui/material/LinearProgress';
-import { LongestWordContextType } from "../../types";
+import { LongestWordContextType } from "../../models/types";
 import { Alert, AlertColor, AlertTitle, Box } from "@mui/material";
-import { WordStatus, Context } from "../../enums";
+import { WordStatus, Context } from "../../models/enums";
 
 // DODAJ funkciju za reload, u smislu da se ne vraca na pocetnu stranu
 // nego da startuje game ponovo
@@ -55,7 +55,7 @@ export const Training = () => {
     }, [progressBarValue])
 
     const addLetter = (e: React.MouseEvent<HTMLDivElement>): void => {
-        const clickedLetter: HTMLDivElement = e.target as HTMLDivElement
+        const clickedLetter = e.target as HTMLDivElement
         const newChosenLetters: Array<HTMLDivElement> = [...chosenLetters]
         if (lettersRef.current) {
             newChosenLetters.push(lettersRef.current.childNodes[Number(clickedLetter.id)] as HTMLDivElement)

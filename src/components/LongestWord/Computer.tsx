@@ -3,8 +3,8 @@ import { LongestWordContext } from "../Custom/StartTemplate"
 import { latinToCyrilic, findWords, convertToLatin } from "./functions"
 import Loading from "../Custom/Loading"
 import BackArrow from "../Custom/BackArrow"
-import { Dictionary } from "../../types"
-import { Context } from "../../enums"
+import { Dictionary } from "../../models/types"
+import { Context } from "../../models/enums"
 import { Alert, AlertTitle, Box, Button, TextField } from "@mui/material"
 import SearchIcon from '@mui/icons-material/Search';
 

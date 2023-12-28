@@ -1,4 +1,4 @@
-import { Context } from "../../enums"
+import { Context } from "../../models/enums"
 import { StartTemplate } from "../Custom/StartTemplate"
 
 const MyNumber = () => {
